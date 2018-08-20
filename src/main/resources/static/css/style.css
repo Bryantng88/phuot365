@@ -1,0 +1,296 @@
+/*========== MENU ==========*/
+
+.menu{
+	background-color: #FFFFFF;
+	height:auto;
+  width: 100%;
+
+}
+
+/* ====TITLE==== */
+
+/*h1{
+  color: #281f2b!important;
+  font-size: 60px;
+  font-family: Arial,sans-serif !important;
+  font-weight: 500;
+  line-height: .75;
+  letter-spacing: -1px;
+  padding-left: 20px;
+}
+*/
+/*========== NAVIGATION BAR ==========*/
+
+nav {
+  height: 100px;
+  margin: 0 auto;
+  background: #fff;
+  /*padding: 50px 0;*/
+  
+}
+nav ul {
+  margin-top: 10px !important;
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #281F2B;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+
+/* ============= fill ============= */
+nav.fill ul li a
+{
+  position: relative;
+}
+nav.fill ul li a:after
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #FFFFFF;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+
+/* ========== Keyframes for fill =========== */
+
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+
+/* =========== dropdown =========== */
+
+.fill ul ul {
+  display: none;
+  position: absolute;
+}
+
+/*.fill .dropdown ul li{
+  position: absolute;
+/*	float:none;*/
+/*	display: block;
+}*/
+
+nav ul li:hover > ul {
+  display:block;
+}
+
+nav ul ul li {
+  width:170px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+/*nav ul li:hover > ul {
+	float:none;
+	display:inherit;
+}*/
+	
+/* Fisrt Tier Dropdown */
+/*nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+*/
+
+
+/* ========== SEARCHBAR =========== */
+
+.search_section {
+  background-color: lightblue;
+  overflow: hidden;
+  background-image: url('https://livedemo00-joomla.template-help.com/joomla_prod-17290/images/slider/slide-3.jpg?1534260830260');
+  background-size: 100%;
+
+  /* parallex effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border: 0px;
+  margin: 0px;
+  float:left;
+  height: 400px;
+  width: 100%;
+}
+
+
+.search {
+  margin: auto;
+  margin-top: 175px;
+  opacity: 0.8;
+}
+
+.search_bar {
+  float: left;
+  width: 700px;
+  height: 42px;
+  border: 0px;
+  padding-left: 10px;
+  font-size: 18px;
+  margin-left: 220px;
+}
+
+.search_submit {
+  float: left;
+  width: 200px;
+  height: 42px;
+  margin: 0px;
+  border: 0px;
+  transition: width 1s, background-color 1s;
+  font-size: 18px;
+  background-color: lightgreen;
+ /* margin: -4px;*/
+}
+
+/*.search_submit:hover {
+  width: 440px;
+  background-color: lightgreen;
+}*/
+
+/* ============================= OFFER_SECTION ================================= */
+
+.section{
+  transition-duration: 3s;
+  width: 100%;
+  float: left;
+  background-color: #281F2B;
+  display: flex;
+  height: 550px;
+}
+
+
+
+.box{
+  position: relative;
+  height: 480px;
+  width: 350px;
+  background-color: #281F2B;
+  margin: auto;
+  margin-top: -45px;
+  border: 15px solid #281F2B;
+  background-size: 350px 280px;
+  background-position: auto;
+  background-repeat: no-repeat;
+}
+
+.first{
+  background-image: url('https://mirchevphotography.com/wp-content/uploads/2015/03/Cuban_Man_String_Fishing_at_the_Havanas_Harbor.jpg');  
+}
+.second{
+  background-image: url('https://mirchevphotography.com/wp-content/uploads/2015/03/Workers_Walking_Through_an_Old_Metal_Railway_Bridge.jpg');   
+}
+.third{
+  background-image: url('https://mirchevphotography.com/wp-content/uploads/2015/03/Vintage_American_Car_on_the_Streets_of_Havana_Cuba.jpg');
+}
+
+.line {
+  width: 200px;
+  height: 4px;
+  background: tomato;
+  margin-bottom: 15px;
+}
+
+
+.box .description{
+  color: white;
+  font-family: courier;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  bottom: 10;
+  font-weight: bold !important;
+}
+
+.box .description p{
+  
+}
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+/*.best_offer {
+  height: 500px;
+  background-image: url('https://static.mytour.vn/upload_images/Image/kinh%20nghi%E1%BB%87m%20du%20l%E1%BB%8Bch/H%E1%BB%99i%20An/2a.jpg');
+  background-attachment: fixed;
+  background-position: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+.best_offer h1{
+  
+}
+
+/*.bestOffer{
+	background-color: green;
+}*/
+/*.recentPost{
+	background-color: yellow;
+}
+.footer{
+	background-color: black;
+}*/

@@ -1,34 +1,113 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
 
 <head>
-    <base href="/">
-    <title>springboot-jwt-starter</title>
-    <link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-    [ng\:cloak], [ng-cloak], .ng-cloak {
-      display: none !important;
-    }
-    </style>
+<!--   <script src="http://code.jquery.com/jquery-1.s10.2.js"></script> -->
+<!--   <script src="js/angular-1.4.5/angular.min.js"></script>
+  <script src="js/angular-1.4.5/angular-route.js"></script> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+  
+  <link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+  
+  <script src="js/angular-1.4.5/angular.min.js"></script>
+  <script src="js/angular-1.4.5/angular-route.js"></script>
+  <script src="js/index.js"></script>
+  
+  
+
+
+  
+
+
+
+  <title>Phuot365</title>
 </head>
-<body ng-app="myApp">
-  <div class="container" ng-controller="NavigationCtrl" ng-cloak class="ng-cloak">
-    <ul style="margin-bottom: 20px;" class="nav nav-pills" role="tablist">
-        <li ng-class="tabClass('/')"><a href="#/" ng-click="setSelectedTab('/')">Home</a></li>
-        <li ng-class="tabClass('/login')" ng-hide="authenticated"><a href="#/login" ng-click="setSelectedTab('/login')">Login</a></li>
-        <li ng-show="authenticated"><a href="" ng-click="logout()">logout</a></li>
-    </ul>
-    <div ng-view ></div>
+
+<body>
+  <div class="menu">
+    <div class="row">
+      <div class="col-md-3">
+        <h1>Phuot365</h1>
+      </div>
+      <div class="col-md-9">
+        <nav class="fill">
+            <ul>
+              <li class="active"><a href="#">Home</a></li>
+              <li class="dropdown"><a hreft="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
+
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Long</a></li>
+                    <li><a href="#">qua</a></li>
+                    <li><a href="#">dep</a></li>
+                    <li><a href="#">trai</a></li>
+                    <li><a href="#">dung</a></li>
+                    <li><a href="#">vay</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+      </div>
+    </div>
   </div>
-  <script src="webjars/jquery/2.1.1/jquery.js"></script>
-  <script src="webjars/bootstrap/3.3.7/js/bootstrap.js"></script>
-  <script src="webjars/angularjs/1.5.8/angular.js"></script>
-  <script src="webjars/angular-route/1.5.9/angular-route.js"></script>
 
-  <script src="app.js"></script>
-  <script src="dashboard/dashboard.js"></script>
-  <script src="login/login.js"></script>
-  <script src="services/auth.js"></script>
+  
+  <div class="search_section">
+    <div class="search">
+      <input type="text" placeholder="Your destination" class="search_bar">
+      <button class="search_submit">search</button>
+    </div> 
+  </div>
+
+  <div class="recent_post section">
+    <div class="first box">
+      <div class="description"><h1>VIET NAM</h1>
+        <div class="line"></div>
+        <p>this is to describe the content of the offer. I really dont know what to write, so if you read this, you are damn stupid</p>
+      </div>
+    </div>
+    <div class="second box">
+      <div class="description"><h1>LAOS</h1>
+        <div class="line"></div>
+        <p>this is to describe the content of the offer. I really dont know what to write, so if you read this, you are damn stupid</p>
+      </div>
+    </div>
+    <div class="third box">
+      <div class="description"><h1>CAMBODIA</h1>
+        <div class="line"></div>
+        <p>this is to describe the content of the offer. I really dont know what to write, so if you read this, you are damn stupid</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="best_offer section">
+
+    <div class="w3-content w3-display-container" style="max-width:800px">
+      <img class="mySlides" src="img_nature_wide.jpg" style="width:100%">
+      <img class="mySlides" src="img_snow_wide.jpg" style="width:100%">
+      <img class="mySlides" src="img_mountains_wide.jpg" style="width:100%">
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+
+
+    <<!-- div class="description"><h1>Travel is pleasure</h1></div> -->
+  </div>
+  <div class="footer">a</div>
 </body>
-
-</html>

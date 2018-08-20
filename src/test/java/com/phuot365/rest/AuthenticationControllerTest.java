@@ -87,7 +87,7 @@ public class AuthenticationControllerTest {
         authority.setName( UserRoleName.ROLE_USER );
         List<Authority> authorities = Arrays.asList(authority);
         user.setAuthorities(authorities);
-        user.setLastPasswordResetDate(new Timestamp(DateUtil.yesterday().getTime()));
+//        user.setLastPasswordResetDate(new Timestamp(DateUtil.yesterday().getTime()));
         when(this.userDetailsService.loadUserByUsername(eq("testUser"))).thenReturn(user);
         MockitoAnnotations.initMocks(this);
 
